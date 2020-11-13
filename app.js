@@ -2,10 +2,18 @@
 let covidWins = unclickedSpaces < 1
 const colors = {
     null: ,
-    null: ,
     player1: 1,
     player2: -1,
 }
+
+let win1 = [sq1, sq2, sq3]
+let win1 = [sq1, sq4, sq7]
+let win1 = [sq1, sq5, sq9]
+let win1 = [sq2, sq5, sq8]
+let win1 = [sq3, sq6, sq9]
+let win1 = [sq4, sq5, sq6]
+let win1 = [sq7, sq8, sq9]
+let win1 = [sq7, sq5, sq3]
 
 
 /*---------------------------- Variables (state) ----------------------------*/
