@@ -120,20 +120,23 @@ for (let i = 0; i < board.length+1; i++) {
     //             return winner
     //         }
     //     }
-    //     // if(board.includes(null)){
-    //     //    return null
-    //     // }
-    //     // else{
-    //     //     return 'No One Wins'
-    //     // }
+        // if(board.includes(null)){
+        //    return null
+        // }
+        // else{
+        //     return 'No One Wins'
+        // }
     // }
 
 function isWinner(){
-    possibleWinScenarios.forEach(function (combo) {
-        if(board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]){
-            winner = board[combo[0]]
+    possibleWinScenarios.forEach(function (winningSet) {
+        if(board[winningSet[0]] && board[winningSet[0]] === board[winningSet[1]] && board[winningSet[0]] === board[winningSet[2]]){
+            winner = board[winningSet[0]]
         }
     })
+    if(!board.includes(null) && winner === null){
+        winner = 'No One Wins'
+    }
     return winner
 }
 
