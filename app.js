@@ -98,36 +98,6 @@ for (let i = 0; i < board.length+1; i++) {
 // a winner and changes the state of the winner
 // variable if so
 
-
-// function isWinner() {
-//     for(let i = 0; i < possibleWinScenarios.length; i++){
-//         if(Math.abs(board[possibleWinScenarios[i][0]] + board[possibleWinScenarios[i][1]] + board[possibleWinScenarios[i][2]] === 3)){
-//             return board[possibleWinScenarios[i][0]]
-//         }
-//     }
-//     if(board.includes(null)){
-//        return null
-//     }
-//     else{
-//         return 'No One Wins'
-//     }
-// }
-
-    // function isWinner() {
-    //     for(let i = 0; i < possibleWinScenarios.length; i++){
-    //         if(Math.abs(board[possibleWinScenarios[i][0]] + board[possibleWinScenarios[i][1]] + board[possibleWinScenarios[i][2]] === 3)){
-    //             winner = board[possibleWinScenarios[i][0]]
-    //             return winner
-    //         }
-    //     }
-        // if(board.includes(null)){
-        //    return null
-        // }
-        // else{
-        //     return 'No One Wins'
-        // }
-    // }
-
 function isWinner(){
     possibleWinScenarios.forEach(function (winningSet) {
         if(board[winningSet[0]] && board[winningSet[0]] === board[winningSet[1]] && board[winningSet[0]] === board[winningSet[2]]){
