@@ -5,8 +5,8 @@ const colors = {
     'null': null,
     '1': 'blue',
     '-1': 'red',
-    '1': 'Biden',
-    '-1': 'Trump'
+    '1': 'B',
+    '-1': 'T'
 }
 
 // make 1 and -1 an object, and have key value pairs of color, and name
@@ -105,3 +105,42 @@ for (let i = 0; i < board.length+1; i++) {
 //             }
 //         }
 //         return board[possibleWinScenarios[i]]
+
+function isWinner() {
+    for(let i = 0; i < possibleWinScenarios.length; i++){
+        if(Math.abs(board[possibleWinScenarios[i][0]] + board[possibleWinScenarios[i][1]] + board[possibleWinScenarios[i][2]] === 3)){
+            return board[possibleWinScenarios[i][0]]
+        }
+    }
+    if(board.includes(null)){
+        return null
+    }
+    else{
+        return 'No One Wins'
+    }
+}
+
+// function isWinner() {
+//     possibleWinScenarios.forEach(function (combo) {
+        
+        
+        // for (let i = 0; i < combo.length; i++) {
+        //     const square = combo[i]
+        //     if(board[square]){
+        //         return board[square]
+        //     }
+        // }
+//     })
+//     if(board.includes(null)){
+//         return null
+//     }
+//     else{
+//         return 'No One Wins'
+//     }
+// }
+
+
+// Render function:
+// Displays the current state of the board
+// on the page, updating the elements to reflect
+// either X or O depending on whose turn it is
