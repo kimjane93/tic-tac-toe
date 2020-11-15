@@ -2,6 +2,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    background-image: linear-gradient( #b92b27, #1565c0);
 }
 
 section.board {
@@ -24,4 +28,17 @@ div {
     vertical-align: middle;
 }
 
+#music-button{
+    border-color: rgb(140, 133, 147);
+    height: 30px;
+    width: 50px;
+    background-color: rgb(47, 6, 89);
+}
+
+#button{
+    border-color: orange;
+    background-color: orangered;
+    height: 50px;
+    width: 150px;
+}
 
