@@ -128,10 +128,10 @@ function render() {
             document.getElementById('winner-image').innerHTML = "<img src='https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg' width='300' height='200'>"
             proclaimer.innerHTML = `Whoop-dee-doo ${colors[winner].toUpperCase()} Wins!`
         }
-    else{
-        document.getElementById('winner-image').innerHTML = "<img src='https://media4.s-nbcnews.com/j/streams/2014/December/141208/1D274907376164-today-sad-biden-141208-tease.social_share_1024x512_center.jpg' width='300' height='200'>"
+        else{
+        document.getElementById('winner-image').innerHTML = "<img src='https://static.politico.com/dims4/default/478ace1/2147483647/resize/1160x/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2F2014%2F09%2F03%2F140903_joe_biden_sad_ap_328.jpg' width='400' height='200'>"
          proclaimer.innerHTML = `${colors[winner].toUpperCase()} Wins, Stop The Count!`
-    }
+        }
 }
     else{
         proclaimer.innerHTML = `${colors[turn].toUpperCase()}'s Turn`
